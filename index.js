@@ -1,5 +1,6 @@
 require('dotenv').config();
 require('./cron').run();
+require('./server').run();
 
 const fs = require('fs');
 const path = require('path');
