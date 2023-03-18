@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
 module.exports = {
     run: ()=>{
         app.listen(process.env.PORT || 3001, () => {
-            console.log('Listening on port 3001');
+            console.log('Listening on port '+ (process.env.PORT || 3001));
         });
     }
 }

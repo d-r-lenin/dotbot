@@ -59,12 +59,3 @@ client.login(token);
 
 
 
-
-// create a web server which will ping the bot every 15 minutes to keep it alive
-const http = require('http');
-const port = process.env.PORT || 3000;
-http.createServer(function (req, res) {
-    res.writeHead(200, { 'Content-Type': 'text/plain' });
-    res.end('Hello World!');
-}
-).listen(port);
